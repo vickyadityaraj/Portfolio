@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid currentColor;
+      animation: typing 2s steps(22, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 16ch }
+    }
+
+    @keyframes blink-caret {
+      50% { border-color: transparent; }
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- ====== Navigation Bar ====== -->
+  <header class="bg-blue-600 dark:bg-blue-800 text-white sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Aditya Raj</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== Home Section ====== -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center bg-gray-100 dark:bg-gray-800 px-4 py-20">
+    <img src="images/Profile.jpg" alt="Profile" class="rounded-full w-48 h-48 mb-6 shadow-lg border-4 border-blue-500">
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm <span class="text-blue-600 dark:text-blue-400">Aditya Raj</span></h2>
+    <p class="typewriter text-2xl text-gray-700 dark:text-gray-300 mb-4">Full Stack Developer</p>
+    <p class="italic text-lg text-gray-600 dark:text-gray-400 mb-6">"Creating with code, designing with passion."</p>
+    <a href="../Assets/resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Download Resume</a>
+  </section>
+
+  <!-- ====== About Section ====== -->
+  <section id="about" class="p-8 bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 shadow">
+        <p class="mb-2">I'm a passionate web developer from Hyderabad, India. I love building responsive, user-friendly websites and constantly strive to learn new technologies.</p>
+        <p>My interests include programming, open-source contributions, and exploring modern frontend frameworks like React and TailwindCSS.</p>
+      </div>
+
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 shadow">
+        <h3 class="text-xl font-semibold mb-2">Skills</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">HTML</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">CSS</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">JavaScript</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">TailwindCSS</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">Python</span>
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 shadow">
+        <h3 class="text-xl font-semibold mb-2">Education</h3>
+        <ul class="list-disc pl-6">
+          <li>Currently pursuing B.Tech in Computer Science - Malla Reddy University</li>
+          <li>Completed Intermediate from Sri Chaitanya Junior College</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Projects Section ====== -->
+<section id="projects" class="bg-gray-100 dark:bg-gray-800 p-8">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- FinGenius -->
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+        <img src="images/FinGenius.png" alt="FinGenius" class="rounded mb-2">
+        <h3 class="font-bold text-xl">FinGenius</h3>
+        <p class="mt-2 mb-1 text-sm">FinGenius is a personal financial assistant that helps users manage spending, budgeting, and investments with real-time insights and visual analytics.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Tools Used:</strong> React.js, Tailwind CSS, Chart.js, Node.js, Express.js, MongoDB</p>
+        <a href="https://github.com/vickyadityaraj/FinGenius" class="text-blue-600 hover:underline mt-2 inline-block">View GitHub</a>
+      </div>
+
+      <!-- HealthLink -->
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+        <img src="images/HealthLink.png" alt="HealthLink" class="rounded mb-2">
+        <h3 class="font-bold text-xl">HealthLink</h3>
+        <p class="mt-2 mb-1 text-sm">HealthLink is a health record management system that allows users to upload medical reports, consult doctors, and securely share health data for emergencies.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Tools Used:</strong> React.js, Tailwind CSS, Node.js, Express.js, MongoDB</p>
+        <a href="https://github.com/vickyadityaraj/HealthLink" class="text-blue-600 hover:underline mt-2 inline-block">View GitHub</a>
+      </div>
+
+      <!-- HireMe -->
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+        <img src="images/HireMe.png" alt="HireMe" class="rounded mb-2">
+        <h3 class="font-bold text-xl">HireMe</h3>
+        <p class="mt-2 mb-1 text-sm">HireMe is a platform that connects users with local service professionals like electricians, cleaners, and plumbers. It supports booking, task management, and in-app payments.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Tools Used:</strong> React.js, Tailwind CSS, Node.js, Express.js, MongoDB, JWT</p>
+        <a href="https://github.com/vickyadityaraj/HireMe" class="text-blue-600 hover:underline mt-2 inline-block">View GitHub</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- ====== Contact Section ====== -->
+  <section id="contact" class="p-8 bg-white dark:bg-gray-900">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded dark:bg-gray-900 dark:border-gray-700">
+          <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded dark:bg-gray-900 dark:border-gray-700">
+          <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded dark:bg-gray-900 dark:border-gray-700"></textarea>
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+        <div class="mt-6 text-center">
+          <a href="https://www.linkedin.com/in/aditya-raj-622172340" class="mx-2 text-blue-600 hover:underline">🔗 LinkedIn</a>
+          <a href="https://github.com/vickyadityaraj" class="mx-2 text-blue-600 hover:underline">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="bg-blue-600 dark:bg-blue-800 text-white text-center p-4">
+    <p>&copy; 2025 Aditya Raj. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
